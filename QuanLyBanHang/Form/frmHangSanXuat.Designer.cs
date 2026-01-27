@@ -1,4 +1,4 @@
-﻿namespace QuanLyThuChi
+﻿namespace QuanLyBanHang
 {
     partial class frmHangSanXuat
     {

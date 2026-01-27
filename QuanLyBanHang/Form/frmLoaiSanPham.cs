@@ -1,7 +1,7 @@
 using QuanLyBanHang.Data;
 using System.Windows.Forms;
 
-namespace QuanLyThuChi
+namespace QuanLyBanHang
 {
     public partial class frmLoaiSanPham : Form
     {
