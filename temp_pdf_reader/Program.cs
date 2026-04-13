@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        string filePath = @"c:\Study\QuanLyBanHang\PDF\IMS501_HuongDanThucHanh_Buoi07.pdf";
+        string filePath = @"c:\Study\QuanLyBanHang\PDF\IMS501_HuongDanThucHanh_Buoi08.pdf";
         using (PdfDocument pdfDoc = new PdfDocument(new PdfReader(filePath)))
         {
             for (int i = 1; i <= pdfDoc.GetNumberOfPages(); i++)

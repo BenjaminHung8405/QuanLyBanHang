@@ -1,0 +1,438 @@
+﻿Page 1:
+H╞»ß╗ÜNG Dß║¬N THß╗░C H├ÇNH BUß╗öI 08 
+1. Tß║úi lß║íi c├íc g├│i tß╗½ th╞░ viß╗çn NuGet. 
+L╞░u ├╜: B╞░ß╗¢c n├áy chß╗ë thß╗▒c hiß╗çn trong tr╞░ß╗¥ng hß╗úp d├╣ng m├íy cß╗ºa tr╞░ß╗¥ng ─æß╗â thß╗▒c h├ánh. Nß║┐u SV d├╣ng m├íy c├í nh├ón v├á ─æ├ú c├│ c├íc g├│i th├¼ bß╗Å qua. 
+- Khß╗ƒi ─æß╗Öng ch╞░╞íng tr├¼nh Developer Command Prompt for VS 2019/2022 vß╗¢i quyß╗ün Administrator. 
+ 
+- D├╣ng lß╗çnh MSBuild /t:restore ─æß╗â tß║úi lß║íi th╞░ viß╗çn tß╗½ NuGet. 
+ 
+T├╣y theo buß╗òi thß╗▒c h├ánh, c├│ thß╗â ß╗ò ─æ─⌐a v├á th╞░ mß╗Ñc chß╗⌐a project c├│ thß╗â kh├íc vß╗¢i h├¼nh tr├¬n. 
+ 
+2. Tß║ío lß║íi CSDL bß║▒ng lß╗çnh Migration. 
+L╞░u ├╜: B╞░ß╗¢c n├áy chß╗ë thß╗▒c hiß╗çn trong tr╞░ß╗¥ng hß╗úp d├╣ng m├íy cß╗ºa tr╞░ß╗¥ng ─æß╗â thß╗▒c h├ánh. Nß║┐u SV d├╣ng m├íy c├í nh├ón v├á ─æ├ú c├│ CSDL th├¼ bß╗Å qua. 
+- Chß╗ënh lß║íi th├┤ng sß╗æ kß║┐t nß╗æi b├¬n trong tß║¡p tin App.config hoß║╖c Data\QLBHDbContext.cs (nß║┐u ch╞░a ─æ├║ng vß╗¢i cß║Ñu h├¼nh cß╗ºa SQL Server). 
+"Server=.\\SQLEXPRESS;Database=QLBH;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True" 
+ 
+- D├╣ng cß╗¡a sß╗ò d├▓ng lß╗çnh, thß╗▒c hiß╗çn lß╗çnh sau: 
+Update-Database 
+
+Page 2:
+3. Nhß║¡p lß║íi dß╗» liß╗çu mß║½u cho CSDL. 
+L╞░u ├╜: B╞░ß╗¢c n├áy chß╗ë thß╗▒c hiß╗çn trong tr╞░ß╗¥ng hß╗úp d├╣ng m├íy cß╗ºa tr╞░ß╗¥ng ─æß╗â thß╗▒c h├ánh. Nß║┐u SV ─æ├ú nhß║¡p CSDL mß║½u th├¼ bß╗Å qua. 
+Mß╗ƒ SSMS, sß╗¡ dß╗Ñng tß║¡p tin QLBH.sql cho sß║╡n ─æß╗â nhß║¡p dß╗» liß╗çu v├áo. 
+ 
+4. C├ái ─æß║╖t lß║íi Microsoft RDLC Report Designer. 
+L╞░u ├╜: B╞░ß╗¢c n├áy chß╗ë thß╗▒c hiß╗çn trong tr╞░ß╗¥ng hß╗úp d├╣ng m├íy cß╗ºa tr╞░ß╗¥ng ─æß╗â thß╗▒c h├ánh. Nß║┐u SV d├╣ng m├íy c├í nh├ón v├á ─æ├ú c├ái bß╗Å qua. 
+∩éî Mß╗ƒ Visual Studio, v├áo menu Extensions, chß╗ìn Manage Extensions. 
+∩éì Trong cß╗¡a sß╗ò Manage Extensions, g├╡ ΓÇ£ReportΓÇ¥ v├áo ├┤ t├¼m kiß║┐m. 
+∩éÄ Nhß║Ñn Download ─æß╗â c├ái ─æß║╖t Microsoft RDLC Report Designer. 
+∩éÅ ─É├│ng Visual Studio ─æß╗â bß║»t ─æß║ºu qu├í tr├¼nh c├ái ─æß║╖t. 
+∩éÉ Nhß║Ñn Modify v├á ─æß╗úi download vß╗ü. Qu├í tr├¼nh n├áy c├│ thß╗â mß║Ñt khoß║úng 3 ─æß║┐n 5 ph├║t. 
+∩éæ Nhß║Ñn Close ─æß╗â ho├án tß║Ñt qu├í tr├¼nh c├ái ─æß║╖t. 
+ 
+ 
+
+Page 3:
+5. Bß╗ò sung chß╗⌐c n─âng lß╗ìc dß╗» liß╗çu v├áo biß╗âu mß║½u Thß╗æng k├¬ sß║ún phß║⌐m. 
+- Mß╗ƒ form frmThongKeSanPham, bß╗ò sung th├¬m c├íc th├ánh phß║ºn ß╗ƒ ph├¡a tr├¬n c├╣ng. 
+ 
+ 
+─Éß║╖t t├¬n cho c├íc Controls: 
+Controls Loß║íi T├¬n 
+H├úng sß║ún xuß║Ñt ComboBox cboHangSanXuat 
+Loß║íi sß║ún phß║⌐m ComboBox cboLoaiSanPham 
+Lß╗ìc kß║┐t quß║ú Button btnLocKetQua 
+ 
+- Mß╗ƒ report rptThongKeSanPham. 
+∩éî Bß╗ò sung th├¬m 1 TextBox ─æß╗â hiß╗ân thß╗ï m├┤ tß║ú kß║┐t quß║ú sau khi lß╗ìc. 
+∩éì Bß╗ò sung th├¬m 1 tham sß╗æ cho report bß║▒ng c├ích nhß║Ñn chuß╗Öt phß║úi v├áo mß╗Ñc Parameters v├á chß╗ìn Add ParameterΓÇª 
+
+Page 4:
+ 
+─Éß║╖t t├¬n (t├╣y ├╜) v├á thiß║┐t lß║¡p th├┤ng tin cho tham sß╗æ: 
+ 
+∩éÄ Nß║»m k├⌐o tham sß╗æ v├áo TextBox vß╗½a tß║ío giß╗æng nh╞░ h├¼nh b├¬n d╞░ß╗¢i. 
+ 
+
+Page 5:
+- Bß╗ò sung code cho form frmThongKeSanPham. 
+∩éî Hiß╗ân thß╗ï dß╗» liß╗çu v├áo 2 ComboBox: 
+public void LayLoaiSanPhamVaoComboBox() 
+{ 
+    // Sinh vi├¬n tß╗▒ code dß╗▒a v├áo b├ái c┼⌐ 
+} 
+ 
+public void LayHangSanXuatVaoComboBox() 
+{ 
+    // Sinh vi├¬n tß╗▒ code dß╗▒a v├áo b├ái c┼⌐ 
+} 
+ 
+private void frmThongKeSanPham_Load(object sender, EventArgs e) 
+{ 
+    LayLoaiSanPhamVaoComboBox(); 
+    LayHangSanXuatVaoComboBox(); 
+ 
+    var danhSachSanPham = context.SanPham.Select(r => new DanhSachSanPham { ... }).ToList(); 
+ 
+    danhSachSanPhamDataTable.Clear(); 
+    foreach (var row in danhSachSanPham) { danhSachSanPhamDataTable.AddDanhSachSanPhamRow(row.ID, ...); } 
+ 
+    ReportDataSource reportDataSource = new ReportDataSource(); 
+    reportDataSource.Name = "DanhSachSanPham"; 
+    reportDataSource.Value = danhSachSanPhamDataTable; 
+ 
+    reportViewer1.LocalReport.DataSources.Clear(); 
+    reportViewer1.LocalReport.DataSources.Add(reportDataSource); 
+    reportViewer1.LocalReport.ReportPath = Path.Combine(reportsFolder, "rptThongKeSanPham.rdlc"); 
+ 
+    ReportParameter reportParameter = new ReportParameter("MoTaKetQuaHienThi", "(Tß║Ñt cß║ú sß║ún phß║⌐m)"); 
+    reportViewer1.LocalReport.SetParameters(reportParameter); 
+ 
+    reportViewer1.SetDisplayMode(DisplayMode.PrintLayout); 
+
+Page 6:
+    reportViewer1.ZoomMode = ZoomMode.Percent; 
+    reportViewer1.ZoomPercent = 100; 
+ 
+    reportViewer1.RefreshReport(); 
+} 
+ 
+∩éì Xß╗¡ l├╜ khi nhß║Ñn n├║t Lß╗ìc kß║┐t quß║ú: 
+private void btnLocKetQua_Click(object sender, EventArgs e) 
+{ 
+    if (cboHangSanXuat.Text == "" && cboLoaiSanPham.Text == "") 
+    { 
+        // Nß║┐u cß║ú 2 ComboBox ─æß╗üu bß╗Å trß╗æng th├¼ hiß╗ân thß╗ï tß║Ñt cß║ú 
+        frmThongKeSanPham_Load(sender, e); 
+    } 
+    else 
+    { 
+        var danhSachSanPham = context.SanPham.Select(r => new DanhSachSanPham 
+        { 
+            ID = r.ID, 
+            HangSanXuatID = r.HangSanXuatID, 
+            TenHangSanXuat = r.HangSanXuat.TenHangSanXuat, 
+            LoaiSanPhamID = r.LoaiSanPhamID, 
+            TenLoai = r.LoaiSanPham.TenLoai, 
+            TenSanPham = r.TenSanPham, 
+            DonGia = r.DonGia, 
+            SoLuong = r.SoLuong, 
+            HinhAnh = r.HinhAnh, 
+            MoTa = r.MoTa 
+        }); 
+ 
+        string hangSanXuat = null; 
+        string loaiSanPham = null; 
+ 
+        if (cboHangSanXuat.Text != "") 
+
+Page 7:
+        { 
+            int hangSanXuatID = Convert.ToInt32(cboHangSanXuat.SelectedValue.ToString()); 
+            hangSanXuat = "H├úng sß║ún xuß║Ñt: " + cboHangSanXuat.Text; 
+            danhSachSanPham = danhSachSanPham.Where(r => r.HangSanXuatID == hangSanXuatID); 
+        } 
+        if (cboLoaiSanPham.Text != "") 
+        { 
+            int loaiSanPhamID = Convert.ToInt32(cboLoaiSanPham.SelectedValue.ToString()); 
+            loaiSanPham += "Ph├ón loß║íi: " + cboLoaiSanPham.Text; 
+            danhSachSanPham = danhSachSanPham.Where(r => r.LoaiSanPhamID == loaiSanPhamID); 
+        } 
+ 
+        danhSachSanPhamDataTable.Clear(); 
+        foreach (var row in danhSachSanPham) 
+        { 
+            danhSachSanPhamDataTable.AddDanhSachSanPhamRow(row.ID, 
+                row.HangSanXuatID, 
+                row.TenHangSanXuat, 
+                row.LoaiSanPhamID, 
+                row.TenLoai, 
+                row.TenSanPham, 
+                row.DonGia, 
+                row.SoLuong, 
+                row.HinhAnh, 
+                row.MoTa); 
+        } 
+ 
+        ReportDataSource reportDataSource = new ReportDataSource(); 
+        reportDataSource.Name = "DanhSachSanPham"; 
+        reportDataSource.Value = danhSachSanPhamDataTable; 
+ 
+        reportViewer1.LocalReport.DataSources.Clear(); 
+        reportViewer1.LocalReport.DataSources.Add(reportDataSource); 
+        reportViewer1.LocalReport.ReportPath = Path.Combine(reportsFolder, "rptThongKeSanPham.rdlc"); 
+ 
+
+Page 8:
+        ReportParameter reportParameter = new ReportParameter("MoTaKetQuaHienThi", "(" + hangSanXuat + " - " + loaiSanPham + ")"); 
+        reportViewer1.LocalReport.SetParameters(reportParameter); 
+ 
+        reportViewer1.SetDisplayMode(DisplayMode.PrintLayout); 
+        reportViewer1.ZoomMode = ZoomMode.Percent; 
+        reportViewer1.ZoomPercent = 100; 
+ 
+        reportViewer1.RefreshReport(); 
+    } 
+} 
+ 
+6. Bß╗ò sung chß╗⌐c n─âng lß╗ìc dß╗» liß╗çu v├áo biß╗âu mß║½u Thß╗æng k├¬ doanh thu. 
+- Mß╗ƒ form frmThongKeDoanhThu, bß╗ò sung th├¬m c├íc th├ánh phß║ºn ß╗ƒ ph├¡a tr├¬n c├╣ng. 
+ 
+ 
+
+Page 9:
+─Éß║╖t t├¬n cho c├íc Controls: 
+Controls Loß║íi T├¬n v├á thuß╗Öc t├¡nh 
+dtpTuNgay 
+Format: Custom 
+Tß╗½ ng├áy DateTimePicker CustomFormat: dd/MM/yyyy 
+MinDate: 01/01/2020 
+MaxDate: 31/12/2100 
+dtpDenNgay 
+Format: Custom 
+─Éß║┐n ng├áy DateTimePicker CustomFormat: dd/MM/yyyy 
+MinDate: 01/01/2020 
+MaxDate: 31/12/2100 
+Lß╗ìc kß║┐t quß║ú Button btnLocKetQua 
+Hiß╗çn tß║Ñt cß║ú Button btnHienTatCa 
+ 
+- Mß╗ƒ report rptThongKeDoanhThu. 
+∩éî Bß╗ò sung th├¬m 1 TextBox ─æß╗â hiß╗ân thß╗ï m├┤ tß║ú kß║┐t quß║ú sau khi lß╗ìc. 
+∩éì Bß╗ò sung th├¬m 1 tham sß╗æ cho report bß║▒ng c├ích nhß║Ñn chuß╗Öt phß║úi v├áo mß╗Ñc Parameters v├á chß╗ìn Add ParameterΓÇª 
+ 
+─Éß║╖t t├¬n (t├╣y ├╜) v├á thiß║┐t lß║¡p th├┤ng tin cho tham sß╗æ: 
+
+Page 10:
+ 
+∩éÄ Nß║»m k├⌐o tham sß╗æ v├áo TextBox vß╗½a tß║ío giß╗æng nh╞░ h├¼nh b├¬n d╞░ß╗¢i. 
+ 
+ 
+- Bß╗ò sung code cho form frmThongKeDoanhThu. 
+∩éî Hiß╗ân thß╗ï m├┤ tß║ú kß║┐t quß║ú hiß╗ân thß╗ï: 
+private void frmThongKeDoanhThu_Load(object sender, EventArgs e) 
+{ 
+    ... 
+ 
+    ReportDataSource reportDataSource = new ReportDataSource(); 
+
+Page 11:
+    reportDataSource.Name = "DanhSachHoaDon"; 
+    reportDataSource.Value = danhSachHoaDonDataTable; 
+ 
+    reportViewer1.LocalReport.DataSources.Clear(); 
+    reportViewer1.LocalReport.DataSources.Add(reportDataSource); 
+    reportViewer1.LocalReport.ReportPath = Path.Combine(reportsFolder, "rptThongKeDoanhThu.rdlc"); 
+ 
+    ReportParameter reportParameter = new ReportParameter("MoTaKetQuaHienThi", "(Tß║Ñt cß║ú thß╗¥i gian)"); 
+    reportViewer1.LocalReport.SetParameters(reportParameter); 
+ 
+    reportViewer1.SetDisplayMode(DisplayMode.PrintLayout); 
+    reportViewer1.ZoomMode = ZoomMode.Percent; 
+    reportViewer1.ZoomPercent = 100; 
+ 
+    reportViewer1.RefreshReport(); 
+} 
+ 
+∩éì Xß╗¡ l├╜ khi nhß║Ñn n├║t Lß╗ìc kß║┐t quß║ú: 
+private void btnLocKetQua_Click(object sender, EventArgs e) 
+{ 
+    var danhSachHoaDon = context.HoaDon.Select(r => new DanhSachHoaDon 
+    { 
+        ID = r.ID, 
+        NhanVienID = r.NhanVienID, 
+        HoVaTenNhanVien = r.NhanVien.HoVaTen, 
+        KhachHangID = r.KhachHangID, 
+        HoVaTenKhachHang = r.KhachHang.HoVaTen, 
+        NgayLap = r.NgayLap, 
+        GhiChuHoaDon = r.GhiChuHoaDon, 
+        TongTienHoaDon = r.HoaDon_ChiTiet.Sum(r => r.SoLuongBan * r.DonGiaBan) 
+    }); 
+ 
+    danhSachHoaDon = danhSachHoaDon.Where(r => r.NgayLap >= dtpTuNgay.Value && r.NgayLap <= dtpDenNgay.Value); 
+ 
+
+Page 12:
+    danhSachHoaDonDataTable.Clear(); 
+    foreach (var row in danhSachHoaDon) 
+    { 
+        danhSachHoaDonDataTable.AddDanhSachHoaDonRow(row.ID, 
+            row.NhanVienID, 
+            row.HoVaTenNhanVien, 
+            row.KhachHangID, 
+            row.HoVaTenKhachHang, 
+            row.NgayLap, 
+            row.GhiChuHoaDon, 
+            row.TongTienHoaDon ?? 0); 
+    } 
+ 
+    ReportDataSource reportDataSource = new ReportDataSource(); 
+    reportDataSource.Name = "DanhSachHoaDon"; 
+    reportDataSource.Value = danhSachHoaDonDataTable; 
+ 
+    reportViewer1.LocalReport.DataSources.Clear(); 
+    reportViewer1.LocalReport.DataSources.Add(reportDataSource); 
+    reportViewer1.LocalReport.ReportPath = Path.Combine(reportsFolder, "rptThongKeDoanhThu.rdlc"); 
+ 
+    ReportParameter reportParameter = new ReportParameter("MoTaKetQuaHienThi", "Tß╗½ ng├áy " + dtpTuNgay.Text + " - ─Éß║┐n ng├áy: " + dtpDenNgay.Text); 
+    reportViewer1.LocalReport.SetParameters(reportParameter); 
+ 
+    reportViewer1.SetDisplayMode(DisplayMode.PrintLayout); 
+    reportViewer1.ZoomMode = ZoomMode.Percent; 
+    reportViewer1.ZoomPercent = 100; 
+ 
+    reportViewer1.RefreshReport(); 
+} 
+ 
+∩éì Xß╗¡ l├╜ khi nhß║Ñn n├║t Hiß╗çn tß║Ñt cß║ú: 
+private void btnHienTatCa_Click(object sender, EventArgs e) 
+{ 
+
+Page 13:
+    frmThongKeDoanhThu_Load(sender, e); 
+} 
+ 
+7. Thiß║┐t kß║┐ biß╗âu mß║½u In h├│a ─æ╞ín. 
+- Trong th╞░ mß╗Ñc Reports, tß║ío mß╗¢i 1 report v├á ─æß║╖t t├¬n l├á rptInHoaDon. 
+- Thiß║┐t kß║┐ giao diß╗çn rptInHoaDon theo c├íc b╞░ß╗¢c nh╞░ sau: 
+∩éî ─Éß╗ïnh dß║íng trang in bß║▒ng c├ích nhß║Ñn chuß╗Öt phß║úi v├áo v├╣ng trß╗æng b├¬n ngo├ái report v├á chß╗ìn Report PropertiesΓÇª 
+   
+
+Page 14:
+∩éì Quy ─æß╗ïnh chiß╗üu rß╗Öng ΓÇ£lß╗ìt l├▓ngΓÇ¥ cho phß║ºn th├ón report bß║▒ng c├ích chß╗ënh trong cß╗¡a sß╗ò PropertiesΓÇª 
+ 
+∩éÄ Tß║ío dß╗» liß╗çu nguß╗ôn cho report: 
+- Mß╗ƒ QLBHDataSet, tß║ío mß╗¢i mß╗Öt DataTable v├á ─æß║╖t t├¬n l├á DanhSachHoaDon_ChiTiet. 
+- Thiß║┐t kß║┐ DataTable nh╞░ h├¼nh b├¬n d╞░ß╗¢i. 
+ 
+- L╞░u ├╜: 
+ΓÇó ID: System.Int32, Primary key. 
+ΓÇó HoaDonID: System.Int32 
+ΓÇó SanPhamID: System.Int32 
+ΓÇó SoLuongBan: System.Int16 
+ΓÇó DonGiaBan: System.Int32 
+ΓÇó ThanhTien: System.Int32 
+
+Page 15:
+∩éÅ Thiß║┐t kß║┐ report theo mß║½u gß╗úi ├╜ nh╞░ sau: 
+ 
+∩éÉ Trong th╞░ mß╗Ñc Reports, tß║ío form frmInHoaDon ─æß╗â hiß╗ân thß╗ï report vß╗½a tß║ío l├¬n. 
+ 
+
+Page 16:
+∩éæ ─Éß║╖t thuß╗Öc t├¡nh cho form: 
+Thuß╗Öc t├¡nh Gi├í trß╗ï ├¥ ngh─⌐a 
+StartPosision CenterScreen Khi chß║íy form sß║╜ hiß╗ân thß╗ï c├ón ch├¡nh giß╗»a m├án h├¼nh. 
+Text In h├│a ─æ╞ín Hiß╗ân thß╗ï tr├¬n thanh ti├¬u ─æß╗ü cß╗ºa form. 
+ 
+∩éÆ Bß╗ò sung code mß║½u cho form: 
+using System; 
+using System.Data; 
+using System.IO; 
+using System.Linq; 
+using System.Windows.Forms; 
+using QuanLyBanHang.Data; 
+using Microsoft.Reporting.WinForms; 
+using System.Collections.Generic; 
+using Microsoft.EntityFrameworkCore; 
+ 
+namespace QuanLyBanHang.Reports 
+{ 
+    public partial class frmInHoaDon : Form 
+    { 
+        QLBHDbContext context = new QLBHDbContext(); 
+        QLBHDataSet.DanhSachHoaDon_ChiTietDataTable danhSachHoaDon_ChiTietDataTable = new QLBHDataSet.DanhSachHoaDon_ChiTietDataTable(); 
+        string reportsFolder = Application.StartupPath.Replace("bin\\Debug\\net5.0-windows", "Reports"); 
+        int id; // M├ú h├│a ─æ╞ín 
+ 
+        public frmInHoaDon(int maHoaDon = 0) 
+        { 
+            InitializeComponent(); 
+            id = maHoaDon; 
+        } 
+ 
+        private void frmInHoaDon_Load(object sender, EventArgs e) 
+
+Page 17:
+        { 
+            var hoaDon = context.HoaDon.Include(r => r.KhachHang).Include(r => r.HoaDon_ChiTiet) 
+                .Where(r => r.ID == id).SingleOrDefault(); 
+ 
+            if (hoaDon != null) 
+            { 
+                var hoaDonChiTiet = context.HoaDon_ChiTiet.Where(r => r.HoaDonID == id).Select(r => new DanhSachHoaDon_ChiTiet 
+                { 
+                    ID = r.ID, 
+                    HoaDonID = r.HoaDonID, 
+                    SanPhamID = r.SanPhamID, 
+                    TenSanPham = r.SanPham.TenSanPham, 
+                    SoLuongBan = r.SoLuongBan, 
+                    DonGiaBan = r.DonGiaBan, 
+                    ThanhTien = Convert.ToInt32(r.SoLuongBan * r.DonGiaBan) 
+                }).ToList(); 
+ 
+                danhSachHoaDon_ChiTietDataTable.Clear(); 
+                foreach (var row in hoaDonChiTiet) 
+                { 
+                    danhSachHoaDon_ChiTietDataTable.AddDanhSachHoaDon_ChiTietRow(row.ID, 
+                        row.HoaDonID, 
+                        row.SanPhamID, 
+                        row.TenSanPham, 
+                        row.SoLuongBan, 
+                        row.DonGiaBan, 
+                        row.ThanhTien); 
+                } 
+ 
+                ReportDataSource reportDataSource = new ReportDataSource(); 
+                reportDataSource.Name = "DanhSachHoaDon_ChiTiet"; 
+                reportDataSource.Value = danhSachHoaDon_ChiTietDataTable; 
+ 
+                reportViewer1.LocalReport.DataSources.Clear(); 
+                reportViewer1.LocalReport.DataSources.Add(reportDataSource); 
+
+Page 18:
+                reportViewer1.LocalReport.ReportPath = Path.Combine(reportsFolder, "rptInHoaDon.rdlc"); 
+ 
+                IList<ReportParameter> param = new List<ReportParameter> 
+                { 
+                    new ReportParameter("NgayLap", string.Format("Ng├áy {0} Th├íng {1} N─âm {2}", 
+                        hoaDon.NgayLap.Day, 
+                        hoaDon.NgayLap.Month, 
+                        hoaDon.NgayLap.Year)), 
+ 
+                    new ReportParameter("NguoiBan_Ten", "C├öNG TY TNHH LAZY ANT"), 
+                    new ReportParameter("NguoiBan_DiaChi", "Mß╗╣ Ph╞░ß╗¢c, TP. Long Xuy├¬n, An Giang"), 
+                    new ReportParameter("NguoiBan_MaSoThue", "1602162070"), 
+ 
+                    new ReportParameter("NguoiMua_Ten", hoaDon.KhachHang.HoVaTen), 
+                    new ReportParameter("NguoiMua_DiaChi", hoaDon.KhachHang.DiaChi), 
+                    new ReportParameter("NguoiMua_MaSoThue", ""), 
+ 
+                    new ReportParameter("TongTien", hoaDon.HoaDon_ChiTiet.Sum(r => r.SoLuongBan * r.DonGiaBan).ToString()) 
+                }; 
+                reportViewer1.LocalReport.SetParameters(param); 
+ 
+                reportViewer1.SetDisplayMode(DisplayMode.PrintLayout); 
+                reportViewer1.ZoomMode = ZoomMode.Percent; 
+                reportViewer1.ZoomPercent = 100; 
+ 
+                reportViewer1.RefreshReport(); 
+            } 
+        } 
+    } 
+} 
+ 
+∩éÆ Bß╗ò sung code form frmHoaDon trong th╞░ mß╗Ñc form: 
+private void btnInHoaDon_Click(object sender, EventArgs e) 
+{ 
+
+Page 19:
+    id = Convert.ToInt32(dataGridView.CurrentRow.Cells["ID"].Value.ToString()); 
+    using (frmInHoaDon inHoaDon = new frmInHoaDon(id)) 
+    { 
+        inHoaDon.ShowDialog(); 
+    } 
+} 
+ 
+Kß║┐t quß║ú hiß╗ân thß╗ï: 
+ 
+
