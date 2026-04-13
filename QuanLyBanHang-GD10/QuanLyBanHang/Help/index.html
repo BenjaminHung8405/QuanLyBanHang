@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Sử Dụng - Quản Lý Bán Hàng</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        .f1-tip {
+            background: #dcfce7;
+            border-left: 4px solid #22c55e;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Phần Mềm Quản Lý Bán Hàng</h1>
+        <p>Hướng dẫn sử dụng chi tiết dành cho người dùng</p>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>1. Giới thiệu</h2>
+            <p>Hệ thống Quản lý bán hàng giúp doanh nghiệp quản lý Danh mục sản phẩm, Khách hàng, Nhân viên và thực hiện các nghiệp vụ Hóa đơn, Thống kê một cách chuyên nghiệp.</p>
+            <div class="f1-tip">
+                <strong>Mẹo:</strong> Nhấn phím <code>F1</code> tại bất kỳ màn hình nào để mở bản hướng dẫn này.
+            </div>
+        </section>
+
+        <section id="login">
+            <h2>2. Đăng nhập hệ thống</h2>
+            <ul>
+                <li>Khởi động ứng dụng.</li>
+                <li>Nhập <strong>Tên đăng nhập</strong> và <strong>Mật khẩu</strong>.</li>
+                <li>Nhấn <strong>Đăng nhập</strong> để vào hệ thống.</li>
+            </ul>
+        </section>
+
+        <section id="management">
+            <h2>3. Chức năng Quản lý</h2>
+            <p>Sử dụng menu <strong>Quản lý</strong> để truy cập các danh mục:</p>
+            <ul>
+                <li><strong>Sản phẩm:</strong> Thêm, sửa, xóa và tìm kiếm thông tin sản phẩm.</li>
+                <li><strong>Khách hàng:</strong> Quản lý thông tin khách hàng thân thiết.</li>
+                <li><strong>Nhân viên:</strong> Quản lý hồ sơ nhân sự (chỉ dành cho Admin).</li>
+                <li><strong>Hóa đơn:</strong> Lập hóa đơn bán hàng cho khách.</li>
+            </ul>
+        </section>
+
+        <section id="reports">
+            <h2>4. Báo cáo - Thống kê</h2>
+            <p>Hệ thống hỗ trợ xuất báo cáo chuyên nghiệp qua RDLC:</p>
+            <ul>
+                <li><strong>Thống kê sản phẩm:</strong> Xem số lượng tồn kho theo loại hoặc hãng.</li>
+                <li><strong>Thống kê doanh thu:</strong> Xem tổng thu nhập theo khoảng thời gian.</li>
+                <li><strong>In hóa đơn:</strong> Xuất file in hóa đơn trực tiếp từ danh sách chi tiết.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 FIT - Hệ Thống Quản Lý Bán Hàng Premium</p>
+    </footer>
+</body>
+</html>
